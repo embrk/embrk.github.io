@@ -1,0 +1,147 @@
+:root {
+  --main-bg-color: #ebf1f4;
+  --main-txt-color: #2b3d41;
+  --scnd-txt-color: #4c5f6b;
+  --header-color: #a85751;
+  --link-color: #235789;
+  --hover-link-color: #cddad6;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Averia Sans Libre', cursive;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  color: var(--header-color);
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--hover-link-color);
+  text-decoration: none; /* No underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: var(--scnd-txt-color);
+}
+
+.title {
+  width: 379px;
+  height: 215px;
+  margin: 0 auto;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button-secondary {
+  background-color: var(--scnd-txt-color);
+}
+
+/* Layout Styling */
+* {
+  box-sizing: border-box;
+}
+
+/* .wrapper {
+
+} */
+
+.content {
+  width: 100%;
+  margin: 50px auto; /* No spacing on top and bottom and auto spacing to left and right */
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+}
+
+.navigation > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  .logo {
+    /* Make logo smaller by changing it's height */
+    height: 50px;
+  }
+
+  .title {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .navigation > li.homelink {
+    display: none;
+  }
+
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 24px;
+  }
+}
+
+  @media only screen and (max-width: 1007px) and (min-width: 641px) {
+  .logo {
+    /* Make logo smaller by changing it's height */
+    height: 50px;
+  }
+
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 24px;
+  }
+}
+
+  header {
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  top: 0;
+  z-index: 1;
+  padding: 15px;
+  background: rgba(250, 250, 255, 0.8);
+}
+
+  header img {
+  width: 50px;
+  float: left;
+}
