@@ -2,8 +2,8 @@
   --main-bg-color: #ebf1f4;
   --main-txt-color: #2b3d41;
   --scnd-txt-color: #4c5f6b;
-  --header-color: #a85751;
-  --link-color: #235789;
+  --header-color: #2b3d41;
+  --link-color: #617073;
   --hover-link-color: #cddad6;
 }
 
@@ -87,10 +87,38 @@ a:active {
   margin: 50px auto; /* No spacing on top and bottom and auto spacing to left and right */
 }
 
+.column-3 {
+  font-size: 16px;
+  width: 32%;
+  display: inline-block;
+  margin-right: 1%;
+  float: left;
+  text-align: center; /* Centers text */
+  vertical-align: top;
+  margin-top: 50px;
+}
+
 .navigation {
   list-style-type: none;
   padding: 0;
   float: right;
+}
+
+.welcomesection {
+  margin: 30vh 0;
+}
+
+.ourmissionsection {
+  margin: auto;
+  padding: 350px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ourmissionsectiontextblock {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .navigation > li {
