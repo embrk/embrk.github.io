@@ -20,7 +20,6 @@ img {
 }
 
 h1,
-h2,
 h3 {
   font-family: 'Averia Sans Libre', cursive;
   text-align: center;
@@ -32,6 +31,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
 }
 
@@ -92,7 +92,7 @@ a:active {
   width: 32%;
   display: inline-block;
   margin-right: 1%;
-  float: left;
+  /*float: left;*/
   text-align: center; /* Centers text */
   vertical-align: top;
   margin-top: 50px;
@@ -126,6 +126,13 @@ a:active {
   margin-left: 10px;
 }
 
+.aboutus {
+  margin: auto;
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 350px 0;
+}
+
 @media only screen and (max-width: 640px) {
   .logo {
     /* Make logo smaller by changing it's height */
@@ -145,6 +152,21 @@ a:active {
     /* Reduce font-size of heading */
     font-size: 24px;
   }
+
+  .column-2 {
+      /* Modify 4-column to 2-columns */
+      width: 100%;
+      margin-right: 0;
+      padding: 0 15px;
+    }
+
+    .column-3 {
+      /* Modify 4-column to 2-columns */
+      width: 100%;
+      margin-right: 0;
+      padding: 0 15px;
+    }
+
 }
 
   @media only screen and (max-width: 1007px) and (min-width: 641px) {
@@ -157,6 +179,14 @@ a:active {
     /* Reduce font-size of heading */
     font-size: 24px;
   }
+
+  .column-3 {
+    /* Modify 4-column to 2-columns */
+    width: 49%;
+    margin-right: 1%;
+    padding: 0 15px;
+  }
+
 }
 
   header {
